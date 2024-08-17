@@ -1,44 +1,41 @@
 import React, { useState, useEffect } from "react";
 import { TfiUser } from "react-icons/tfi";
-import { IoSunny, IoMoon } from "react-icons/io5"; // Import icons for sun and moon
 import { NavLink } from "react-router-dom";
+import { ThemeProvider } from "../contexts/theme";
+import ThemeBtn from "./ThemeBtn";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [themeMode, setThemeMode]= useState("light");
+  const darkTheme = () =>{
+    setThemeMode('dark')
+  }
+  const lightTheme = () => {
+    setThemeMode('light')
+  }
+  
+  useEffect(()=>{
+document.querySelector('html').classList.remove('dark', 'light')
+document.querySelector('html').classList.add(themeMode)
 
-  const toggleTheme = () => {
-    const newTheme = !darkMode;
-    setDarkMode(newTheme);
-    localStorage.setItem('theme', newTheme ? 'dark' : 'light');
-  };
+  }, [themeMode])
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setDarkMode(true);
-    }
-  }, []);
+  
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
+ 
+  
 
   return (
     <>
       <header className="text-black dark:text-white body-font w-full fixed top-0 left-0 z-50 shadow-md">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-blue-400 dark:bg-gray-800">
+        <div className="container mx-auto flex flex-wrap p-4 md:p-5 items-center bg-blue-400 dark:bg-gray-800 w-full">
           <a className="flex title-font font-medium items-center text-black dark:text-white mb-4 md:mb-0">
-            <span className="ml-10 w-3 font-bold">
+            <span className="ml-2 md:ml-10 w-6 h-6 font-bold">
               <TfiUser />
             </span>
-            <span className="ml-3 text-xl font-serif font-bold">Abhay Kumar</span>
+            <span className="ml-3 text-lg md:text-xl font-serif font-bold">Abhay Kumar</span>
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center font-bold">
-            <ul className="flex gap-7">
+            <ul className="flex gap-4 md:gap-7 text-sm md:text-base">
               <li>
                 <NavLink to="/" className="hover:text-yellow-400 dark:hover:text-yellow-300">
                   Home
@@ -66,9 +63,9 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <button onClick={toggleTheme} className="ml-5 text-2xl">
-            {darkMode ? <IoSunny /> : <IoMoon />}
-          </button>
+          
+          <ThemeBtn/>
+          
         </div>
       </header>
     </>
