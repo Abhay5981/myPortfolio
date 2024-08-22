@@ -38,7 +38,7 @@ const Hero = () => {
             <img
               className="object-cover object-center rounded-full w-[80%] md:w-[65%] h-[80%] md:h-[65%] mx-auto md:mx-0"
               alt="hero"
-              src="/public/portfolio.png"
+              src="/public/image/portfolio.png"
             />
           </div>
         </div>
