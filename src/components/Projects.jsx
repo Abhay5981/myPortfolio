@@ -13,26 +13,26 @@ const Projects = () => {
               {[
                 {
                   title: "Password Generator",
-                  image: "/public/image/PasswordGenerator.png",
+                  image: "/image/PasswordGenerator.png",
                   liveUrl: "https://rpassgene.netlify.app",
                   repoUrl: "https://github.com/Abhay5981/Password_Generator",
                 },
                 {
                   title: "Age Calculator",
-                  image: "/public/image/AgeCalculator.png",
+                  image: "/image/AgeCalculator.png",
                   liveUrl: "https://agecal1.netlify.app",
                   repoUrl:
                     "https://github.com/Abhay5981/Age-Calculator/tree/main/age%20calculator",
                 },
                 {
                   title: "Tic Tac Toe",
-                  image: "/public/image/TicTacToe.png",
+                  image: "/image/TicTacToe.png",
                   liveUrl: "https://aktictactoe-02.netlify.app",
                   repoUrl: "https://github.com/Abhay5981/Tic-Tac-Toe-Game",
                 },
                 {
                   title: "Rock Paper Scissors",
-                  image: "/public/image/RockPaperScissors.png",
+                  image: "/image/RockPaperScissors.png",
                   liveUrl:
                     "https://abhay5981.github.io/Rock-Paper-Scissors-Game/",
                   repoUrl:

@@ -8,7 +8,7 @@ const About = () => {
         <div className="m-5 md:w-1/3  flex justify-center md:justify-start ">
           <img
             className=" md:w-full md:h-auto object-cover rounded-full ring-4 ring-amber-950 ring-offset-0 "
-            src="/public/image/portfolio.png"
+            src="/image/portfolio.png"
             alt="portfolio-img"
           />
         </div>
