@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="text-black dark:text-white body-font w-full fixed top-0 left-0 z-50 shadow-md">
-      <div className="container mx-auto flex flex-wrap p-4 md:p-5 items-center bg-blue-400 dark:bg-gray-800 w-full">
+      <div className="container mx-auto flex flex-wrap p-4 md:p-5 items-center bg-[#65789f] dark:bg-gray-800 w-full">
         <a className="flex title-font font-medium items-center text-black dark:text-white mb-4 md:mb-0">
           <span className="ml-2 md:ml-10 w-6 h-6 font-bold border-4">
             <TfiUser />

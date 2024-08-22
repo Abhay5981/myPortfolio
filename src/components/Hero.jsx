@@ -3,10 +3,10 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <section className="text-gray-600 body-font bg-slate-50 pt-15 md:pt-20 h-[100vh]">
+      <section className="text-gray-800 body-font bg-[#ecf4fb] pt-15 md:pt-20 h-[100vh] ">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center font-serif">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <p className="title-font sm:text-4xl text-2xl font-serif font-normal text-gray-700">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ml-12">
+            <p className="title-font sm:text-4xl text-2xl font-serif font-normal ">
               Hello, It's Me
             </p>
             <br />
@@ -34,16 +34,16 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
             <img
-              className="object-cover object-center rounded-full w-[80%] md:w-[65%] h-[80%] md:h-[65%] mx-auto md:mx-0"
+              className="object-cover object-center rounded-full w-[80%] md:w-[65%] h-[80%] md:h-[65%] mx-auto md:mx-0 border-4 border-yellow-900 bg-opacity-25"
               alt="hero"
               src="/public/image/portfolio.png"
             />
           </div>
         </div>
       </section>
-      <hr className="bold shadow-sm" />
+     
     </>
   );
 };

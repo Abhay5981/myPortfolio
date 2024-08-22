@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font relative">
+    <div  className="text-gray-600 body-font relative bg-[#ecf4fb] font-serif">
       <div className="container px-5 py-15 mx-auto pt-15 md:pt-20 h-[100vh]">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -99,7 +99,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

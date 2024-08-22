@@ -3,15 +3,16 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="aboutContainer flex flex-col md:flex-row items-center md:items-start pt-15 md:pt-20">
-        <div className="m-5 md:w-1/3  flex justify-center md:justify-start">
+    <div className="container bg-[#ecf4fb]">
+      <div className="aboutContainer flex flex-col md:flex-row items-center md:items-start pt-15 md:pt-20 ">
+        <div className="m-5 md:w-1/3  flex justify-center md:justify-start ">
           <img
             className=" md:w-full md:h-auto object-cover rounded-full ring-4 ring-amber-950 ring-offset-0 "
             src="/public/image/portfolio.png"
             alt="portfolio-img"
           />
         </div>
-        <div className="w-full bg-slate-50 h-auto relative shrink-0 md:w-2/3">
+        <div className="w-full  h-auto relative shrink-0 md:w-2/3">
           <div className="font-serif text-xl text-slate-900 py-15 px-5 md:px-10 my-6">
             <h1 className="font-bold lg:text-3xl md:text-2xl sm:text-xl text-center md:text-left p-5">
               About Me
@@ -46,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <hr className="bold" />
+      </div>
     </>
   );
 };
