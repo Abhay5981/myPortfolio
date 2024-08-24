@@ -11,7 +11,7 @@ const About = () => {
         <div className="mb-8 md:mb-0 md:w-1/3 flex justify-center md:justify-start">
           <img
             className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full ring-4 ring-amber-950"
-            src="/image/portfolio.png"
+            src="/image/portfolio pic_processed.jpeg"
             alt="portfolio-img"
           />
         </div>

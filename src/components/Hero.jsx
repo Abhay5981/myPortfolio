@@ -37,7 +37,7 @@ const Hero = () => {
           <img
             className="object-cover object-center rounded-full mx-auto border-4 border-yellow-900"
             alt="hero"
-            src="/image/portfolio.png"
+            src="/image/portfolio pic_processed.jpeg"
           />
         </div>
       </div>

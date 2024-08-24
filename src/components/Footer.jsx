@@ -17,17 +17,17 @@ const Footer = () => {
           </p>
           
           {/* Social Media Icons */}
-          <span className="inline-flex justify-center sm:justify-start gap-3">
-            <a className="text-gray-500 hover:text-blue-700" href="#">
+          <span className="inline-flex justify-center sm:justify-start gap-3 ">
+            <a className="text-gray-700 hover:text-blue-700" href="#">
               <FaFacebook className="w-5 h-5" />
             </a>
-            <a className="text-gray-500 hover:text-blue-500" href="#">
+            <a className="text-gray-700 hover:text-blue-500" href="#">
               <FaTwitter className="w-5 h-5" />
             </a>
-            <a className="text-gray-500 hover:text-pink-500" href="#">
+            <a className="text-gray-700 hover:text-pink-500" href="#">
               <FaInstagram className="w-5 h-5" />
             </a>
-            <a className="text-gray-500 hover:text-blue-900" href="#">
+            <a className="text-gray-700 hover:text-blue-900" href="#">
               <FaLinkedinIn className="w-5 h-5" />
             </a>
           </span>
