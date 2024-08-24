@@ -8,11 +8,13 @@ import Projects from "./Projects";
 const Home = () => {
   return (
     <>
+      <div className="h-full">
       <Hero />
       <About />
       <Skill />
       <Projects />
       <Contact />
+      </div>
     </>
   );
 };

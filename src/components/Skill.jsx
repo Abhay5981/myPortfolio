@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Skill = () => {
   return (
-    <>
-      <div className="skill bg-[#ecf4fb] text-center  md:pt-10 h-[50vh]">
-        <h1 className="font-serif font-semibold text-2xl mb-5">Skills</h1>
+    <section id="skill" className="w-full h-screen bg-[#ecf4fb] flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="font-serif font-bold text-2xl mb-5">Skills</h1>
         <ul className="flex flex-wrap gap-4 justify-center p-8">
           <li className="bg-yellow-300 px-4 py-2 rounded">HTML</li>
           <li className="bg-yellow-300 px-4 py-2 rounded">CSS</li>
@@ -17,9 +17,8 @@ const Skill = () => {
           <li className="bg-yellow-300 px-4 py-2 rounded">Tailwind</li>
         </ul>
       </div>
-     
-    </>
-  )
-}
+    </section>
+  );
+};
 
 export default Skill;

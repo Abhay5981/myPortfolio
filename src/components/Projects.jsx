@@ -3,12 +3,12 @@ import React from "react";
 const Projects = () => {
   return (
     <>
-      <div className="container mx-auto py-10 bg-[#ecf4fb]">
-        <div className="text-center p-4 font-serif font-bold text-2xl">
-          <h2>Projects</h2>
+      <div className="container mx-auto py-10 bg-[#ecf4fb]  w-full h-auto ">
+        <div className="text-center p-4 font-serif font-bold text-2xl mt-2">
+          <h2 className="font-serif font-bold text-2xl md:text-3xl mb-8">Projects</h2>
         </div>
         <section className="text-gray-600 body-font">
-          <div className="container px-5 py-12 mx-auto">
+          <div className="container px-5 py-10 mx-auto">
             <div className="flex flex-wrap -m-4">
               {[
                 {
@@ -39,7 +39,7 @@ const Projects = () => {
                     "https://github.com/Abhay5981/Rock-Paper-Scissors-Game",
                 },
               ].map((project, index) => (
-                <div key={index} className="p-4 md:w-1/1 lg:w-1/2 h-auto">
+                <div key={index} className="p-2 md:w-1/1 lg:w-1/2 h-auto">
                   <div className="relative h-full overflow-hidden rounded-lg shadow-lg group">
                     <img
                       alt={project.title}
