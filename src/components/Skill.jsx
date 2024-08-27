@@ -18,7 +18,7 @@ const Skill = () => {
         </ul>
       </div>
     </section>
-  );
+  ); 
 };
 
 export default Skill;
