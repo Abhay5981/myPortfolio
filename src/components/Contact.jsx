@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import useTheme from "../contexts/theme"; // Adjust the path according to your project structure
 
 const Contact = () => {
+  const { themeMode } = useTheme(); // Get the current theme mode from the context
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,7 +23,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="body-font relative bg-[#ecf4fb] font-serif">
+    <div
+      className={`body-font relative font-serif ${
+        themeMode === "dark"
+          ? "bg-gray-900 text-white"
+          : "bg-[#ecf4fb] text-gray-800"
+      }`}
+    >
       <div className="container px-5 py-16 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="font-serif font-bold text-2xl md:text-3xl mb-4 md:mb-8">
@@ -39,7 +47,9 @@ const Contact = () => {
               <div className="relative">
                 <label
                   htmlFor="name"
-                  className="leading-7 text-sm text-gray-600"
+                  className={`leading-7 text-sm ${
+                    themeMode === "dark" ? "text-gray-300" : "text-gray-600"
+                  }`}
                 >
                   Name
                 </label>
@@ -49,7 +59,12 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full bg-gray-200 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                  className={`w-full bg-opacity-50 rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-2 px-4 leading-8 transition-colors duration-200 ease-in-out ${
+                    themeMode === "dark"
+                      ? "bg-gray-800 border-gray-600 text-white placeholder-gray-400"
+                      : "bg-white border-gray-300 text-gray-700 placeholder-gray-500"
+                  }`}
+                  placeholder="Enter your name"
                   required
                 />
               </div>
@@ -58,7 +73,9 @@ const Contact = () => {
               <div className="relative">
                 <label
                   htmlFor="email"
-                  className="leading-7 text-sm text-gray-600"
+                  className={`leading-7 text-sm ${
+                    themeMode === "dark" ? "text-gray-300" : "text-gray-600"
+                  }`}
                 >
                   Email
                 </label>
@@ -68,7 +85,12 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-gray-200 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                  className={`w-full bg-opacity-50 rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-2 px-4 leading-8 transition-colors duration-200 ease-in-out ${
+                    themeMode === "dark"
+                      ? "bg-gray-800 border-gray-600 text-white placeholder-gray-400"
+                      : "bg-white border-gray-300 text-gray-700 placeholder-gray-500"
+                  }`}
+                  placeholder="Enter your email"
                   required
                 />
               </div>
@@ -77,7 +99,9 @@ const Contact = () => {
               <div className="relative">
                 <label
                   htmlFor="message"
-                  className="leading-7 text-sm text-gray-600"
+                  className={`leading-7 text-sm ${
+                    themeMode === "dark" ? "text-gray-300" : "text-gray-600"
+                  }`}
                 >
                   Message
                 </label>
@@ -86,7 +110,12 @@ const Contact = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full bg-gray-200 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-2 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className={`w-full bg-opacity-50 rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none py-2 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out ${
+                    themeMode === "dark"
+                      ? "bg-gray-800 border-gray-600 text-white placeholder-gray-400"
+                      : "bg-white border-gray-300 text-gray-700 placeholder-gray-500"
+                  }`}
+                  placeholder="Enter your message"
                   required
                 ></textarea>
               </div>

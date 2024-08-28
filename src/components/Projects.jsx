@@ -1,11 +1,22 @@
 import React from "react";
+import useTheme from "../contexts/theme"; // Import the useTheme hook
 
 const Projects = () => {
+  const { themeMode } = useTheme(); // Use the useTheme hook to get the current theme mode
+
   return (
     <>
-      <div className="container mx-auto py-10 bg-[#ecf4fb]  w-full h-auto ">
+      <div
+        className={`${
+          themeMode === "dark"
+            ? "bg-gray-900 text-white"
+            : "bg-[#ecf4fb] text-gray-800"
+        } mx-auto py-10 w-full h-auto`}
+      >
         <div className="text-center p-4 font-serif font-bold text-2xl mt-2">
-          <h2 className="font-serif font-bold text-2xl md:text-3xl mb-8">Projects</h2>
+          <h2 className="font-serif font-bold text-2xl md:text-3xl mb-8">
+            Projects
+          </h2>
         </div>
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-10 mx-auto">
@@ -76,7 +87,6 @@ const Projects = () => {
           </div>
         </section>
       </div>
-     
     </>
   );
 };
