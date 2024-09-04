@@ -19,7 +19,7 @@ const Header = () => {
         themeMode === "dark" ? "white" : "black"
       } body-font fixed top-0 left-0 w-full z-50 shadow-md font-serif ${
         themeMode === "dark"
-          ? "bg-gray-800 shadow-lg"
+          ? "bg-gray-800 shadow-lg text-white"
           : "bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900"
       }`}
     >
@@ -88,7 +88,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                 <NavLink to="/skill" className="hover:text-yellow-400 dark:hover:text-yellow-300 hover:underline transition duration-300">
+                 <NavLink to="/project" className="hover:text-yellow-400 dark:hover:text-yellow-300 hover:underline transition duration-300">
                    Projects
                 </NavLink>
                </li>

@@ -1,10 +1,9 @@
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import {ReactTyped} from "react-typed";  // Use "react-typed" directly, not ReactTyped
+import { ReactTyped } from "react-typed"; // Use "react-typed" directly, not ReactTyped
 import Particles from "react-tsparticles";
-import { Parallax } from 'react-parallax';
+import { Parallax } from "react-parallax";
 import useTheme from "../contexts/theme";
-
 
 const Hero = () => {
   const { themeMode } = useTheme();
@@ -56,7 +55,14 @@ const Hero = () => {
               />
 
               <p className="leading-relaxed text-base sm:text-lg mt-4">
-                Aspiring frontend developer passionate about crafting engaging user experiences. Eager to learn and contribute to innovative web projects. With a strong foundation in HTML, CSS, and JavaScript, I strive to create responsive and visually appealing websites that not only look great but also provide seamless functionality. I am always excited to explore new technologies and frameworks, such as React, to enhance my skills and bring fresh ideas to life.
+                Aspiring frontend developer passionate about crafting engaging
+                user experiences. Eager to learn and contribute to innovative
+                web projects. With a strong foundation in HTML, CSS, and
+                JavaScript, I strive to create responsive and visually appealing
+                websites that not only look great but also provide seamless
+                functionality. I am always excited to explore new technologies
+                and frameworks, such as React, to enhance my skills and bring
+                fresh ideas to life.
               </p>
 
               <div className="flex justify-center md:justify-start mt-6">
@@ -110,10 +116,11 @@ const Hero = () => {
             <div className="w-full md:w-1/2 lg:w-1/4 relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full blur-sm opacity-0 group-hover:opacity-75 transition duration-500"></div>
               <img
-                className="object-cover object-center rounded-full mx-auto border-4 border-yellow-900 border-dotted sm:w-64 sm:h-64 md:h-80 shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500"
+                className="object-cover object-center rounded-full mx-auto border-4 border-yellow-900 border-dotted w-3/4 sm:w-64 sm:h-64 md:w-72 md:h-80 lg:w-80 lg:h-96 shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500"
                 alt="hero"
                 src="/image/portfolio pic_processed.jpeg"
               />
+
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
                 <p className="text-white text-lg font-bold">Hello, I'm Abhay</p>
               </div>

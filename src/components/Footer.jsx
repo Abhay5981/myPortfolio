@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer
       className={`${
-        themeMode === 'dark' ? "bg-gray-800 shadow-lg" : 'bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-gray-300'
+        themeMode === 'dark' ? "bg-gray-800 shadow-lg text-white" : 'bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-zinc-950'
       } body-font w-full`}
     >
       <div className="container px-5 py-4 mx-auto flex flex-col sm:flex-row items-center justify-between">

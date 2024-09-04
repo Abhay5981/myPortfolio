@@ -1,7 +1,7 @@
 import React from "react";
 import useTheme from "../contexts/theme"; // Import the useTheme hook
 
-const Projects = () => {
+const Project = () => {
   const { themeMode } = useTheme(); // Use the useTheme hook to get the current theme mode
 
   return (
@@ -91,4 +91,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;
