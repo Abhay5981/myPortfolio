@@ -1,6 +1,7 @@
 # Abhay Kumar's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Welcome to my portfolio! This project showcases my skills as a frontend developer, highlighting various projects and components I've worked on. Built using modern web development tools and practices, this portfolio serves as a central hub for potential employers, collaborators, and anyone interested in my work.
 
 Currently, two official plugins are available:
 
