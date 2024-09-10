@@ -55,5 +55,5 @@ This project is open source and available under the MIT License.
 
 ## Contact
 Email: [abhaykum78@gmail.com] 
-LinkedIn: Abhay Kumar on LinkedIn [https://www.linkedin.com/in/abhayk5981/]
-GitHub: Abhay Kumar's GitHub [https://github.com/Abhay5981/]
+LinkedIn: [https://www.linkedin.com/in/abhayk5981/]
+GitHub: [https://github.com/Abhay5981/]
