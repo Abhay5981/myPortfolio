@@ -64,6 +64,7 @@ Welcome to my personal portfolio website! This website showcases my journey as a
 This project is open source and available under the MIT License.
 
 ## Contact
-[Email:] (abhaykum78@gmail.com) 
-[LinkedIn:] (https://www.linkedin.com/in/abhayk5981/)
-[GitHub:] (https://github.com/Abhay5981/)
+[Email:](abhaykum78@gmail.com) 
+[LinkedIn:](https://www.linkedin.com/in/abhayk5981/)
+[GitHub:](https://github.com/Abhay5981/)
+
