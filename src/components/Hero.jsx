@@ -65,13 +65,13 @@ const Hero = () => {
                 fresh ideas to life.
               </p>
 
-              <div className="flex justify-center md:justify-start mt-6">
+              <div className="flex justify-center md:justify-start">
                 <a
-                  href="https://drive.google.com/file/d/1w8ADAasy1OS256_yPKnA03CNnJir5JSR/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1zdvOoRTQPDYeNsw7LtIRKATdzr0gauvL/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 animate-bounce rounded text-lg">
+                  <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 animate-bounce rounded text-lg mt-5">
                     Download Resume
                   </button>
                 </a>
@@ -113,10 +113,10 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div className="w-full md:w-1/2 lg:w-1/4 relative group">
+            <div className="w-full md:w-1/2 lg:w-1/4  sm:w-3/4 relative group sm:mt-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 to-red-500 rounded-full blur-sm opacity-0 group-hover:opacity-75 transition duration-500"></div>
               <img
-                className="object-cover object-center rounded-full mx-auto border-4 border-yellow-900 border-dotted w-3/4 sm:w-64 sm:h-64 md:w-72 md:h-80 lg:w-80 lg:h-96 shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500"
+                className="object-cover object-center rounded-full mx-auto border-4 border-yellow-900 border-dotted w-3/4 sm:w-44 sm:h-44 md:w-72 md:h-80 lg:w-80 lg:h-96 shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500"
                 alt="hero"
                 src="/image/portfolio pic_processed.jpeg"
               />
